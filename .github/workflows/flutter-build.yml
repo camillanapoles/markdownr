@@ -1,11 +1,11 @@
-name: Flutter Build
+name: Android Build
 
 on:
   push:
-    branches: [ master ]  # ou o nome do seu branch principal
+    branches: [ master ]
   pull_request:
-    branches: [ master ]  # ou o nome do seu branch principal
-  workflow_dispatch:  # Adicione esta linha para permitir execução manual
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
         run: flutter build apk --release
       
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
