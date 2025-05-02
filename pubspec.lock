@@ -189,10 +189,10 @@ packages:
     dependency: "direct main"
     description:
       name: cupertino_icons
-      sha256: d57953e10f9f8327ce64a508a355f0b1ec902193f66288e8cb5070e7c47eeb2d
+      sha256: ba631d1c7f7bef6b729a622b7b752645a2d076dba9976925b8f25725a30e1ee6
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.6"
+    version: "1.0.8"
   dart_style:
     dependency: transitive
     description:
@@ -242,50 +242,58 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_charset_detector
-      sha256: "45de8a4b4255c1ea850a30955e7456091899ed4ff8b75593e14ec59f629b4b56"
+      sha256: "21f6fe8172fbfe3ba9d2fe0dba3702ba07f682315e829a68d49185a0c80d5ad0"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
+    version: "5.0.0"
   flutter_charset_detector_android:
     dependency: transitive
     description:
       name: flutter_charset_detector_android
-      sha256: "43d0c0063242d036b873ade737ebae38716af5cd8b2a4df1754adfd186d58e2c"
+      sha256: "443145e8fc8515b3b32aee375691e40dd59197a86a2ae153166bc88c8200d83b"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
-  flutter_charset_detector_ios:
+    version: "3.0.0"
+  flutter_charset_detector_darwin:
     dependency: transitive
     description:
-      name: flutter_charset_detector_ios
-      sha256: e0e2c7b819cd1f7c9a50da94bf7f0e6d7a095eb64e81196ec758e77793903d43
+      name: flutter_charset_detector_darwin
+      sha256: daac20390275efb92fbb14350fe11286c5e29c7b80d6b0867f52d760f0d69763
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "1.1.0"
   flutter_charset_detector_platform_interface:
     dependency: transitive
     description:
       name: flutter_charset_detector_platform_interface
-      sha256: fcb61de27285031164c945aca4b42e4d36f9a9e359212f21ab652275c9c723ec
+      sha256: "1c09ed7b314a5a9dde76057b98b7d35458ba881eed03d5e5b6f7f74b4869d18c"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.1.0"
+  flutter_charset_detector_web:
+    dependency: transitive
+    description:
+      name: flutter_charset_detector_web
+      sha256: e3ac65f94b12f4887937b21a19365d7927db816840cb93274e3861241cb0e9f2
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   flutter_lints:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: ad76540d21c066228ee3f9d1dad64a9f7e46530e8bb7c85011a88bc1fd874bc5
+      sha256: "5398f14efa795ffb7a33e9b6a08798b26a180edac4ad7db3f231e40f82ce11e1"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "5.0.0"
   flutter_markdown:
     dependency: "direct main"
     description:
       name: flutter_markdown
-      sha256: "8afc9a6aa6d8e8063523192ba837149dbf3d377a37c0b0fc579149a1fbd4a619"
+      sha256: "634622a3a826d67cb05c0e3e576d1812c430fa98404e95b60b131775c73d76ec"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.18"
+    version: "0.7.7"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -428,10 +436,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: cbf8d4b858bb0134ef3ef87841abdf8d63bfc255c266b7bf6b39daa1085c4290
+      sha256: c35bb79562d980e9a453fc715854e1ed39e24e7d0297a880ef54e17f9874a9d7
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "5.1.1"
   logging:
     dependency: transitive
     description:
@@ -596,10 +604,10 @@ packages:
     dependency: "direct main"
     description:
       name: receive_sharing_intent
-      sha256: f127989f8662ea15e193bd1e10605e5a0ab6bb92dffd51f3ce002feb0ce24c93
+      sha256: ec76056e4d258ad708e76d85591d933678625318e411564dcb9059048ca3a593
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.0"
+    version: "1.8.1"
   share_plus:
     dependency: "direct main"
     description:
@@ -886,5 +894,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.3.0 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  dart: ">=3.7.0-0 <4.0.0"
+  flutter: ">=3.22.0"
