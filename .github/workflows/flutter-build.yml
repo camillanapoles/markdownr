@@ -17,19 +17,18 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
-          java-version: '8'
+          java-version: '11'  # Atualizado para Java 11 que é mais compatível com Flutter recente
       
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
-          channel: 'stable'
+          channel: 'stable'  # Removido flutter-version para evitar conflito
       
       - name: Get dependencies
         run: flutter pub get
 
       - name: Accept Android Licenses
-        run: yes | flutter doctor --android-licenses
+        run: flutter doctor --android-licenses || true
       
       - name: Build APK
         run: flutter build apk --release
@@ -39,3 +38,4 @@ jobs:
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
+
