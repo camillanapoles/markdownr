@@ -17,25 +17,33 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
-          java-version: '11'  # Atualizado para Java 11 que é mais compatível com Flutter recente
+          java-version: '11'
       
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'  # Removido flutter-version para evitar conflito
+          channel: 'stable'
+      
+      - name: Flutter doctor
+        run: flutter doctor -v
       
       - name: Get dependencies
-        run: flutter pub get
-
+        run: flutter pub upgrade
+      
       - name: Accept Android Licenses
-        run: flutter doctor --android-licenses || true
+        run: yes | flutter doctor --android-licenses || true
+      
+      - name: Clean before build
+        run: flutter clean
       
       - name: Build APK
-        run: flutter build apk --release
+        run: |
+          flutter build apk --release --verbose
+          ls -la build/app/outputs/flutter-apk/
       
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: build/app/outputs/flutter-apk/app-release.apk
-
+          path: build/app/outputs/flutter-apk/*.apk
+          if-no-files-found: error
